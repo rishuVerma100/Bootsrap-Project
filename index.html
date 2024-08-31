@@ -1,12 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quod.</p>
-    <h2>hello welcome to my new page</h2>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ###################### navbar ################################## -->
+    <div class="nav navbar navbar-expand-md navbar-dark bg-dark py-4 fixed-top">
+      <div class="container">
+        <h1 class="navbar-brand">Company Name</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#namenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="namenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#news" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#question" class="nav-link">Questions </a>
+            </li>
+            <li class="nav-item">
+              <a href="#instractor" class="nav-link"> Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ########################### showcase ######################### -->
+    <section class="bg-dark text-light text-center p-5 text-sm-start" id="news">
+      <div class="container">
+        <div
+          class="d-sm-flex justify-content-between align-items-center text-start"
+        >
+          <div class="enroll-btn">
+            <h2>Become a <span class="text-warning"> Web Developer</span></h2>
+            <p class="my-4 lead">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+              iusto nisi quod minus rerum deserunt corrupti voluptas labore
+              aspernatur, commodi omnis iste fugiat voluptatibus cumque?
+              Laudantium reprehenderit dolorum animi eaque!
+            </p>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+              Start the enrollment
+            </button>
+          </div>
+          <img
+            src="./img/showcase-img1.webp"
+            class="img-fluid d-none d-sm-block"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ##################### news letter ###################### -->
+    <section class="bg-primary p-5" >
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h2 class="text-light mb-3">Sign Up For Our NewsLetter</h2>
+
+          <div class="input-group news-letter">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ####################### boxes ###################### -->
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light text-center">
+              <div class="card-body">
+                <h2><i class="fa-solid fa-laptop mb-3"></i></h2>
+                <h3 class="card-title mb-3">Virtual</h3>
+
+                <p class="card-text mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  placeat ipsum provident hic eligendi mollitia suscipit, dolor
+                  impedit nostrum deleniti.
+                </p>
+
+                <a href="" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light text-center">
+              <div class="card-body">
+                <h2><i class="fa-regular fa-eye mb-3"></i></h2>
+                <h3 class="card-title mb-3">Hybrid</h3>
+
+                <p class="card-text mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  placeat ipsum provident hic eligendi mollitia suscipit, dolor
+                  impedit nostrum deleniti.
+                </p>
+                <a href="" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light text-center">
+              <div class="card-body">
+                <h2><i class="fa-solid fa-users mb-3"></i></h2>
+                <h3 class="card-title mb-3">In Person</h3>
+
+                <p class="card-text mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  placeat ipsum provident hic eligendi mollitia suscipit, dolor
+                  impedit nostrum deleniti.
+                </p>
+
+                <a href="" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ############### learn ################## -->
+    <section class="p-5">
+      <div class="conatiner">
+        <div class="row justify-content-between align-items-center g-5">
+          <div class="col-md">
+            <img src="./img/learn-section-img.png" alt="" />
+          </div>
+          <div class="col-md">
+            <h2 class="mb-3">Learn Of Fundamental</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque,
+              culpa nemo ex quaerat exercitationem aliquid esse nulla sint quos
+              cum excepturi molestias eveniet numquam cupiditate porro sed
+              veritatis. Iusto, quae.
+            </p>
+
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusamus, necessitatibus cum? Pariatur tempore est ea quam vel
+              adipisci sequi quisquam exercitationem ex quo molestias, earum
+              ducimus reprehenderit minus nostrum repellendus vero doloremque
+              rem numquam laboriosam.
+            </p>
+
+            <a href="" class="btn btn-secondary mt-3"
+              ><i class="fa-solid fa-angle-right mx-1"></i>Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################ react ################### -->
+    <section class="bg-dark text-light p-5">
+      <div class="container">
+        <div class="row justify-content-between align-items-center g-5">
+          <div class="col-md">
+            <h2 class="mb-3">Learn React</h2>
+            <p class="lead">
+              Learn Fundamentals is designed to help learners adopt basic
+              cybersecurity-adjacent concepts, cultivate the mindset necessary
+              for a successful cybersecurity career, and provide the
+              prerequisites for OffSec's advanced courses. Gain access to our
+              growing Learning Library of introductory- and essential-level
+              content and begin to develop the mindset and knowledge
+            </p>
+            <p class="lead">
+              Learn Fundamentals is designed to help learners adopt basic
+              cybersecurity-adjacent concepts, cultivate the mindset necessary
+              for a successful cybersecurity career, and provide the
+              prerequisites for OffSec's advanced courses. Gain access to our
+              growing Learning Library of introductory- and essential-level
+              content and begin to develop the mindset and knowledge
+            </p>
+            <a href="" class="btn btn-secondary mt-3"
+              ><i class="fa-solid fa-angle-right mx-1"></i>Read more</a
+            >
+          </div>
+          <div class="col-md">
+            <img
+              src="./img/react-img3.png"
+              class="img-fluid w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################### question ################## -->
+    <section class="p-5" id="question">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h1 class="mb-5">Frequently Asked Question</h1>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseone"
+                  arial-expanded="true"
+                  arial-control="collapseone"
+                >
+                  Rishabh verma
+                </button>
+              </h2>
+              <div
+                id="collapseone"
+                class="accordion-collapse collapse-show"
+                data-bs-parent="accordionRishabhverma"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <strong
+                      >Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit.</strong
+                    >
+                    Reiciendis adipisci eius optio omnis quas? Optio nisi soluta
+                    ad voluptate sunt? Nesciunt saepe voluptate expedita optio
+                    laudantium nostrum,<code>assumenda harum quae.</code>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion"
+                  arial-expanded="true"
+                  arial-control="accordion"
+                >
+                  rishabh verma2
+                </button>
+              </h2>
+              <div
+                id="accordion"
+                class="accordion-collapse collapse-show"
+                data-bs-parent="rishabhverm2"
+              >
+                <div class="accodrion-bdoy">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor commodi consectetur omnis facere, praesentium officia
+                    eum sed reiciendis eveniet, nobis minus dolores sequi nulla
+                    ad dolorum est rerum nesciunt nihil deserunt, doloremque
+                    eaque reprehenderit non exercitationem earum. Praesentium
+                    alias pariatur doloribus totam illum! Recusandae autem
+                    deleniti reprehenderit libero dicta? Dolore ipsam impedit
+                    nulla earum, cupiditate maxime quidem vel nemo ratione esse
+                    architecto libero eos quos, aliquid minima ab atque
+                    corporis. Neque cupiditate quaerat similique esse dolorum
+                    beatae aperiam eos repellat tempore! Aliquam dicta, commodi
+                    necessitatibus eum officia optio quaerat voluptatibus cumque
+                    accusamus corporis ratione magni voluptate dignissimos neque
+                    esse quia! Officiis veritatis eaque officia? Quam
+                    consectetur modi nihil sapiente voluptatem autem tempore,
+                    vero facere necessitatibus earum dignissimos, libero nam.
+                    Aut, nesciunt culpa eos vitae dicta ipsam praesentium fuga
+                    fugit vero cumque suscipit autem quod obcaecati tempore a
+                    libero, tenetur quas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#sarad"
+                  arial-expanded="true"
+                  arial-control="accordion"
+                >
+                  sarad verma
+                </button>
+              </h2>
+              <div
+                id="sarad"
+                class="accordion-collapse collapse-show"
+                data-bs-parent="sarad"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <span class="text-primary"
+                      >Lorem ipsum dolor sit amet consectetur</span
+                    >
+                    adipisicing elit. Atque sed magni voluptates illum rerum
+                    vitae veritatis consequuntur laudantium nostrum ipsam!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#shristi"
+                  arial-expanded="true"
+                  arial-control="accordion"
+                >
+                  shristi verm
+                </button>
+              </h2>
+              <div
+                id="shristi"
+                class="collapse-accordion collapse-show"
+                data-bs-parent="#shristi"
+              >
+                <div class="accodrion-body">
+                  <p>
+                    <span class="text-warning"
+                      >this is the fisrt web page m my life journy</span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil molestiae perferendis necessitatibus vitae laboriosam,
+                    ab, quasi sed veritatis voluptates, ipsam modi ullam
+                    repellendus. Dolorum, quibusdam tempora perspiciatis qui,
+                    voluptatibus praesentium nam commodi totam impedit in sed
+                    rem,<code>odit sequi sunt.</code>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#misti"
+                  arial-expanded="true"
+                  arial-control="accordion"
+                >
+                  MISTI
+                </button>
+              </h2>
+              <div
+                id="misti"
+                class="collapse-accordion collapse-show"
+                data-bs-parent="#misti"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <strong>hello microsoft</strong> Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Impedit deleniti voluptates
+                    iste alias, rem, at totam enim, asperiores ullam repudiandae
+                    rerum quis dignissimos! Possimus fugit dolores nostrum totam
+                    ex laudantium, dolorem mollitia enim similique. Accusantium
+                    voluptas amet veniam deserunt sapiente velit!
+                    <code
+                      >Soluta illo magnam excepturi nulla animi dignissimos
+                      consectetur. Sunt!></code
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################### instractor ################### -->
+
+    <section class="bg-primary p-5 text-center" id="instractor">
+      <div class="container">
+        <div class="mb-5 text-light">
+          <h1 class="text-center">Our Instractor</h1>
+          <p class="text-center">
+            Instructory is the Online teaching marketplace in Bangladesh to earn
+            money.
+          </p>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-lg-3 col-md-6">
+            <div class="card bg-light mx-3">
+              <div class="card-body">
+                <img
+                  src="./img/ins-1.jpeg"
+                  class="rounded-circle ins-img img-fluid  mb-3"
+                  alt=""
+                />
+                <h4 class="card-title">Bill Gates</h4>
+                <p class="card-text">
+                  William Henry Gates III is an American business magnate best known for co-founding the software company Microsoft with his childhood friend Paul Allen
+                </p>
+                <a href="" class="text-decoration-none">
+                  <i class="fa-brands fa-square-facebook text-dark mx-2"></i>
+                  <i class="fa-brands fa-linkedin text-dark mx-2"></i>
+                  <i class="fab fa-instagram-square text-dark mx-2"></i>
+                  <i class="fa-brands fa-square-twitter text-dark mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card bg-light mx-3">
+              <div class="card-body">
+                <img
+                  src="./img/ins-2.jpeg"
+                  class="rounded-circle ins-img img-fluid  mb-3"
+                  alt=""
+                />
+                <h4 class="card-title">devid loes</h4>
+                <p class="card-text">
+                  David Jeremy Leon is an English actor, director, writer and producer. As an actor, he is known for appearing in Rankin and Chris Cottam's 2002 feature film.
+                </p>
+                <a href="" class="text-decoration-none">
+                  <i class="fa-brands fa-square-facebook text-dark mx-2"></i>
+                  <i class="fa-brands fa-linkedin text-dark mx-2"></i>
+                  <i class="fab fa-instagram-square text-dark mx-2"></i>
+                  <i class="fa-brands fa-square-twitter text-dark mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card bg-light mx-3">
+              <div class="card-body">
+                <img
+                  src="./img/ins-3.jpeg"
+                  class="rounded-circle ins-img img-fluid  mb-3"
+                  alt=""
+                />
+                <h4 class="card-title">Sundar Pichai</h4>
+                <p class="card-text">
+                  Pichai Sundararajan, better known as Sundar Pichai, is an Indian-born American business executive. He is the chief executive officer of google.
+                </p>
+                <a href="" class="text-decoration-none">
+                  <i class="fa-brands fa-square-facebook text-dark mx-2"></i>
+                  <i class="fa-brands fa-linkedin text-dark mx-2"></i>
+                  <i class="fab fa-instagram-square text-dark mx-2"></i>
+                  <i class="fa-brands fa-square-twitter text-dark mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card bg-light mx-3">
+              <div class="card-body">
+                <img
+                  src="./img/ins-4.jpeg"
+                  class="rounded-circle ins-img mb-3"
+                  alt=""
+                />
+                <h4 class="card-title">Steve Jobs</h4>
+                <p class="card-text">
+                  Steven Paul Jobs was an American businessman, inventor, and investor best known for co-founding the technology company Apple Inc.
+                </p>
+                <a href="" class="text-decoration-none">
+                  <i class="fa-brands fa-square-facebook text-dark mx-2"></i>
+                  <i class="fa-brands fa-linkedin text-dark mx-2"></i>
+                  <i class="fab fa-instagram-square text-dark mx-2"></i>
+                  <i class="fa-brands fa-square-twitter text-dark mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #################### contact info ##################### -->
+    <section class="p-5">
+      <div class="container">
+        <h1 class="text-capitalize text-center mb-5">contact info</h1>
+        <div class="row">
+          <div class="col-md mb-4">
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Loction:</span> 50 Main st Boston MA
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Number:</span> (555)555-555
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Stuent Phone:</span> +91-8958400-406
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> (555)
+                Student@frontenddbc.test
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email:</span> (555)
+                Student7078@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <img
+              src="./img/google-maps-promo.webp"
+              class="w-100 mx-2 rounded-1 img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ############### footer ####################### -->
+
+    <footer class="p-5 bg-dark text-light text-center position-relative">
+      <div class="container">
+        <p>Copyright &copy; 2024 Frontend Bootcamp!</p>
+
+        <a href="" class="position-absolute bottom-0 end-0 p-5 fs-4"
+          ><i class="fa-solid fa-arrow-up-from-bracket"></i
+        ></a>
+      </div>
+    </footer>
+
+<!-- ################# modal ###################### -->
+
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out the form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="First-name" class="col-form-label">
+                  First Name:
+                </label>
+                 <input type="text" class="form-control" id="First-name">
+              </div>
+              <div class="mb-3">
+                <label for="Last-name" class="col-form-label">
+                  Last Name:
+                </label>
+                 <input type="text" class="form-control" id="Last-name">
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="col-form-label">
+                  Email:
+                </label>
+                 <input type="text" class="form-control" id="Email">
+              </div>
+              <div class="mb-3">
+                <label for="Phone No" class="col-form-label">
+                  Phone No:
+                </label>
+                 <input type="number" class="form-control" id="Phone No">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sumbit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
